@@ -285,7 +285,7 @@ sidebar
     color: var(--colorWith);
   }
   
-  .btn-close{
+  #btn-close{
     position: absolute;
     top: 1rem;
     right: 3rem;
@@ -295,7 +295,7 @@ sidebar
     color: var(--primaryColor-200);
     cursor: pointer;
   }
-  .btn-close:hover{
+  #btn-close:hover{
     color: var(--primaryColor-100);
   }
 
@@ -845,8 +845,7 @@ footer
   =================
    */
    .projects-hero{
-    height: 40vh;
-    background-color: var(--primaryColor-500);
+    color: var(--primaryColor-500);
     display: grid;
     place-items: center;
   }
@@ -874,18 +873,22 @@ footer
     height: 4rem;
     display: grid;
     place-items: center;
-    background-color: var(--primaryColor-600);
+    background-color: var(--primaryColor-100);
     border-radius: 50%;
-    color: var(--clr-primary-1);
-    border: 0.375rem solid var(--primaryColor-600);
+    color: var(--primaryColor-500);
+    border: 0.375rem solid var(--primaryColor-400);
+  }
+  .project-icon:hover{
+    color: var(--primaryColor-300);
   }
   .project-details{
     padding: 2rem 1.5rem;
+    color: var(--colorWith);
   }
   .project-footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: var(--clr-white);
+    color: var(--colorWith);
   }
   .project-footer a{
      color: var(--colorWith);
@@ -901,4 +904,19 @@ footer
     grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
     gap: 3rem 1.5rem;
   }
+  .single-page{
+    text-align: center;
+    height: calc(100vh - 5rem);
+  }
+  
+ /*
+ =============
+ about 
+ ============= 
+ */
+ .main-about{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto  1fr  auto;
+ }
   
