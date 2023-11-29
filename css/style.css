@@ -904,6 +904,11 @@ footer
     grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
     gap: 3rem 1.5rem;
   }
+  @media screen and (min-width: 1170px){
+    .projects-page-center{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   .single-page{
     text-align: center;
     height: calc(100vh - 5rem);
