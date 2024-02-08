@@ -20,3 +20,21 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
+// observe intersection
+const allsections = document.querySelectorAll('section');
+// revealsection
+const revealsection = function(entries, observer){
+    const [entry] = entries;
+    if(!entry.isIntersecting) return;
+    entry.target.classList.remove('section-hidden');
+    // console.log(entry)
+    observer.unobserve(entry.target)
+}
+const sectionObserve = new IntersectionObserver(revealsection,{
+    root: null,
+    threshold: 0.15
+})
+allsections.forEach(section =>  {
+    sectionObserve.observe(section);
+    section.classList.add('section-hidden');
+})

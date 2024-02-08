@@ -924,4 +924,12 @@ footer
   grid-template-columns: 1fr;
   grid-template-rows: auto  1fr  auto;
  }
-  
+
+ /* section hiden */
+ .section-hidden{
+  opacity: 0;
+  transform: translateY(8rem) scale(1.2);
+}
+section{
+  transition: all .2s;
+}
